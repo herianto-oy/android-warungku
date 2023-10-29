@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_pos"
+        android:icon="@drawable/ic_baseline_store_mall_directory_24"
+        android:title="@string/title_pos" />
+
+    <item
+        android:id="@+id/navigation_transaction"
+        android:icon="@drawable/ic_baseline_toc_24"
+        android:title="@string/title_transaction" />
+
+    <item
+        android:id="@+id/navigation_product"
+        android:icon="@drawable/ic_baseline_inventory_2_24"
+        android:title="@string/title_product" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/title_account" />
+
+</menu>

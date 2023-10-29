@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:src="@drawable/default_img" />
+
+            <LinearLayout
+                android:id="@+id/btn_select"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape_circle"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:onClick="btnSelect">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/change"
+                    android:src="@drawable/ic_baseline_camera_alt_24" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_text_box"
+            android:drawableStart="@drawable/ic_baseline_qr_code_scanner_24"
+            android:drawablePadding="10dp"
+            android:hint="@string/label_code"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#e0e0d1" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_text_box"
+            android:drawableStart="@drawable/ic_baseline_shopping_bag_24"
+            android:drawablePadding="10dp"
+            android:hint="@string/label_product_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#e0e0d1"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_text_box"
+            android:drawableStart="@drawable/ic_baseline_monetization_on_24"
+            android:drawablePadding="10dp"
+            android:hint="@string/label_price"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#e0e0d1" />
+
+        <EditText
+            android:id="@+id/et_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_text_box"
+            android:drawableStart="@drawable/ic_baseline_inventory_2_24"
+            android:drawablePadding="10dp"
+            android:hint="@string/label_stock"
+            android:importantForAutofill="no"
+            android:inputType="number|numberSigned"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#e0e0d1" />
+
+        <LinearLayout
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/shape_login"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:padding="15dp"
+                android:text="@string/change"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_create_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/shape_login"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:onClick="createUpdate">
+
+            <TextView
+                android:id="@+id/tv_create_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:padding="15dp"
+                android:text="@string/add_product"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
